@@ -1,5 +1,6 @@
 package me.mingxing5212.chaihens.domain;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
 /**
@@ -8,7 +9,7 @@ import java.math.BigDecimal;
  * @author Mingxing Li
  * @date 3/2/16
  */
-public class Voucher {
+public class Voucher implements Serializable{
     private Long id;
     private String name;
     private VoucherType type;
