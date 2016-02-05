@@ -13,6 +13,7 @@ public class Voucher implements Serializable{
     private Long id;
     private String name;
     private VoucherType type;
+    private VoucherStatus status = VoucherStatus.CREATED;
     private BigDecimal denomination;
     private String description;
     private Merchant merchant;
@@ -23,19 +24,6 @@ public class Voucher implements Serializable{
     private Long effectiveEndTime;
 
     public Voucher(){}
-    public Voucher(Long id, String name, VoucherType type, BigDecimal denomination, String description, Merchant merchant, Store store, String avatar, String color, Long effectiveStartTime, Long effectiveEndTime) {
-        this.id = id;
-        this.name = name;
-        this.type = type;
-        this.denomination = denomination;
-        this.description = description;
-        this.merchant = merchant;
-        this.store = store;
-        this.avatar = avatar;
-        this.color = color;
-        this.effectiveStartTime = effectiveStartTime;
-        this.effectiveEndTime = effectiveEndTime;
-    }
 
     public Long getId() {
         return id;
@@ -125,12 +113,21 @@ public class Voucher implements Serializable{
         this.effectiveEndTime = effectiveEndTime;
     }
 
+    public VoucherStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(VoucherStatus status) {
+        this.status = status;
+    }
+
     @Override
     public String toString() {
         return "Voucher{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", type=" + type +
+                ", status=" + status +
                 ", denomination=" + denomination +
                 ", description='" + description + '\'' +
                 ", merchant=" + merchant +
