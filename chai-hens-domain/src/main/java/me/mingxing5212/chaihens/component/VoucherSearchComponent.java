@@ -14,76 +14,76 @@ import java.util.Optional;
  */
 public class VoucherSearchComponent implements java.io.Serializable{
 
-    private Optional<Long> merchantId = Optional.empty();
-    private Optional<List<VoucherStatus>> voucherStatus = Optional.empty();
-    private Optional<List<VoucherType>> voucherTypes = Optional.empty();
-    private Optional<Long> storeId = Optional.empty();
-    private Optional<Long> effectiveStartTime = Optional.empty();
-    private Optional<Long> effectiveEndTime = Optional.empty();
-    private Optional<Integer> start = Optional.empty();
-    private Optional<Integer> end = Optional.empty();
+    private Long merchantId;
+    private List<VoucherStatus> voucherStatus;
+    private List<VoucherType> voucherTypes;
+    private Long storeId;
+    private Long effectiveStartTime;
+    private Long effectiveEndTime;
+    private Integer start;
+    private Integer end;
 
-    public Optional<Long> getMerchantId() {
+    public Long getMerchantId() {
         return merchantId;
     }
 
-    public void setMerchantId(Optional<Long> merchantId) {
+    public void setMerchantId(Long merchantId) {
         this.merchantId = merchantId;
     }
 
-    public Optional<List<VoucherStatus>> getVoucherStatus() {
+    public List<VoucherStatus> getVoucherStatus() {
         return voucherStatus;
     }
 
-    public void setVoucherStatus(Optional<List<VoucherStatus>> voucherStatus) {
+    public void setVoucherStatus(List<VoucherStatus> voucherStatus) {
         this.voucherStatus = voucherStatus;
     }
 
-    public Optional<List<VoucherType>> getVoucherTypes() {
+    public List<VoucherType> getVoucherTypes() {
         return voucherTypes;
     }
 
-    public void setVoucherTypes(Optional<List<VoucherType>> voucherTypes) {
+    public void setVoucherTypes(List<VoucherType> voucherTypes) {
         this.voucherTypes = voucherTypes;
     }
 
-    public Optional<Long> getStoreId() {
+    public Long getStoreId() {
         return storeId;
     }
 
-    public void setStoreId(Optional<Long> storeId) {
+    public void setStoreId(Long storeId) {
         this.storeId = storeId;
     }
 
-    public Optional<Long> getEffectiveStartTime() {
+    public Long getEffectiveStartTime() {
         return effectiveStartTime;
     }
 
-    public void setEffectiveStartTime(Optional<Long> effectiveStartTime) {
+    public void setEffectiveStartTime(Long effectiveStartTime) {
         this.effectiveStartTime = effectiveStartTime;
     }
 
-    public Optional<Long> getEffectiveEndTime() {
+    public Long getEffectiveEndTime() {
         return effectiveEndTime;
     }
 
-    public void setEffectiveEndTime(Optional<Long> effectiveEndTime) {
+    public void setEffectiveEndTime(Long effectiveEndTime) {
         this.effectiveEndTime = effectiveEndTime;
     }
 
-    public Optional<Integer> getStart() {
+    public Integer getStart() {
         return start;
     }
 
-    public void setStart(Optional<Integer> start) {
+    public void setStart(Integer start) {
         this.start = start;
     }
 
-    public Optional<Integer> getEnd() {
+    public Integer getEnd() {
         return end;
     }
 
-    public void setEnd(Optional<Integer> end) {
+    public void setEnd(Integer end) {
         this.end = end;
     }
 }
