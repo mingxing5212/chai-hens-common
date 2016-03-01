@@ -25,4 +25,9 @@ public enum VoucherType {
     public void setCode(Integer code) {
         this.code = code;
     }
+
+    @Override
+    public String toString() {
+        return this.code.toString();
+    }
 }
