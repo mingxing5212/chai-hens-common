@@ -13,6 +13,7 @@ public class Voucher implements Serializable{
     private Long id;
     private String name;
     private VoucherType type;
+    private String code;
     private VoucherStatus status = VoucherStatus.CREATED;
     private BigDecimal denomination;
     private String description;
@@ -121,12 +122,21 @@ public class Voucher implements Serializable{
         this.status = status;
     }
 
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
     @Override
     public String toString() {
         return "Voucher{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", type=" + type +
+                ", code='" + code + '\'' +
                 ", status=" + status +
                 ", denomination=" + denomination +
                 ", description='" + description + '\'' +

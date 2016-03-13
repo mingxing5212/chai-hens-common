@@ -11,6 +11,7 @@
 	<modules>
 		<module>chai-hens-common-parent</module>
         <module>chai-hens-domain</module>
+        <module>chai-hens-eggs</module>
     </modules>
     <build>
         <plugins>

@@ -6,7 +6,7 @@ package me.mingxing5212.chaihens.domain;
  * @author Mingxing Li
  * @date 5/2/16
  */
-public class MerchantUser {
+public class MerchantUser implements java.io.Serializable{
     private Long id;
     private String name;
     private Merchant merchant;
