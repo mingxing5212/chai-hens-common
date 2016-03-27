@@ -21,8 +21,9 @@ public class Voucher implements Serializable{
     private Store store;
     private String avatar;
     private String color;
-    private Long effectiveStartTime;
-    private Long effectiveEndTime;
+    private Integer effectiveDays;
+    private BigDecimal minimumConsumption;
+    private BigDecimal orderLimit;
 
     public Voucher(){}
 
@@ -98,22 +99,6 @@ public class Voucher implements Serializable{
         this.color = color;
     }
 
-    public Long getEffectiveStartTime() {
-        return effectiveStartTime;
-    }
-
-    public void setEffectiveStartTime(Long effectiveStartTime) {
-        this.effectiveStartTime = effectiveStartTime;
-    }
-
-    public Long getEffectiveEndTime() {
-        return effectiveEndTime;
-    }
-
-    public void setEffectiveEndTime(Long effectiveEndTime) {
-        this.effectiveEndTime = effectiveEndTime;
-    }
-
     public VoucherStatus getStatus() {
         return status;
     }
@@ -130,6 +115,30 @@ public class Voucher implements Serializable{
         this.code = code;
     }
 
+    public Integer getEffectiveDays() {
+        return effectiveDays;
+    }
+
+    public void setEffectiveDays(Integer effectiveDays) {
+        this.effectiveDays = effectiveDays;
+    }
+
+    public BigDecimal getMinimumConsumption() {
+        return minimumConsumption;
+    }
+
+    public void setMinimumConsumption(BigDecimal minimumConsumption) {
+        this.minimumConsumption = minimumConsumption;
+    }
+
+    public BigDecimal getOrderLimit() {
+        return orderLimit;
+    }
+
+    public void setOrderLimit(BigDecimal orderLimit) {
+        this.orderLimit = orderLimit;
+    }
+
     @Override
     public String toString() {
         return "Voucher{" +
@@ -144,8 +153,9 @@ public class Voucher implements Serializable{
                 ", store=" + store +
                 ", avatar='" + avatar + '\'' +
                 ", color='" + color + '\'' +
-                ", effectiveStartTime=" + effectiveStartTime +
-                ", effectiveEndTime=" + effectiveEndTime +
+                ", effectiveDays=" + effectiveDays +
+                ", minimumConsumption=" + minimumConsumption +
+                ", orderLimit=" + orderLimit +
                 '}';
     }
 }
