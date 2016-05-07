@@ -1,4 +1,4 @@
-package me.mingxing5212.chaihens.domain;
+package me.mingxing5212.chaihens.domain.voucher;
 
 /**
  * 卡券类型

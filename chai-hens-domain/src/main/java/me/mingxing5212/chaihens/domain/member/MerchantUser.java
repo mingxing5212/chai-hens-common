@@ -1,4 +1,6 @@
-package me.mingxing5212.chaihens.domain;
+package me.mingxing5212.chaihens.domain.member;
+
+import me.mingxing5212.chaihens.domain.DomainEntity;
 
 /**
  * 商户用户
@@ -6,7 +8,7 @@ package me.mingxing5212.chaihens.domain;
  * @author Mingxing Li
  * @date 5/2/16
  */
-public class MerchantUser implements java.io.Serializable{
+public class MerchantUser extends DomainEntity {
     private Long id;
     private String name;
     private Merchant merchant;

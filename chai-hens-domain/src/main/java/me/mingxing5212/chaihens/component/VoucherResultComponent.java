@@ -1,6 +1,6 @@
 package me.mingxing5212.chaihens.component;
 
-import me.mingxing5212.chaihens.domain.Voucher;
+import me.mingxing5212.chaihens.domain.voucher.Voucher;
 
 import java.util.List;
 

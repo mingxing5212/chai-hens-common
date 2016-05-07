@@ -1,4 +1,4 @@
-package me.mingxing5212.chaihens.domain;
+package me.mingxing5212.chaihens.domain.voucher;
 
 /**
  * 外部卡券接入平台

@@ -22,7 +22,7 @@ public class Seed<T extends Serializable> implements Serializable {
 	
 	private Integer pageNumber = 1;
 
-	private Integer pageSize = 2;
+	private Integer pageSize = 10;
 
 	private PageFilter pageFilter = new PageFilter();
 

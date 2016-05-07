@@ -1,6 +1,9 @@
-package me.mingxing5212.chaihens.domain;
+package me.mingxing5212.chaihens.domain.voucher;
 
-import java.io.Serializable;
+import me.mingxing5212.chaihens.domain.DomainEntity;
+import me.mingxing5212.chaihens.domain.member.Merchant;
+import me.mingxing5212.chaihens.domain.store.Store;
+
 import java.math.BigDecimal;
 
 /**
@@ -9,7 +12,7 @@ import java.math.BigDecimal;
  * @author Mingxing Li
  * @date 3/2/16
  */
-public class Voucher implements Serializable{
+public class Voucher extends DomainEntity {
     private Long id;
     private String name;
     private VoucherType type;
@@ -24,6 +27,7 @@ public class Voucher implements Serializable{
     private Integer effectiveDays;
     private BigDecimal minimumConsumption;
     private BigDecimal orderLimit;
+    private String operatorName;
 
     public Voucher(){}
 
@@ -139,6 +143,14 @@ public class Voucher implements Serializable{
         this.orderLimit = orderLimit;
     }
 
+    public String getOperatorName() {
+        return operatorName;
+    }
+
+    public void setOperatorName(String operatorName) {
+        this.operatorName = operatorName;
+    }
+
     @Override
     public String toString() {
         return "Voucher{" +
@@ -156,6 +168,7 @@ public class Voucher implements Serializable{
                 ", effectiveDays=" + effectiveDays +
                 ", minimumConsumption=" + minimumConsumption +
                 ", orderLimit=" + orderLimit +
+                ", operatorName='" + operatorName + '\'' +
                 '}';
     }
 }

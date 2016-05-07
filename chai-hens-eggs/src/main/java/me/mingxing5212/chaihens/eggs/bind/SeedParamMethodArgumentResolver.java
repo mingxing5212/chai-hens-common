@@ -18,7 +18,6 @@ import javax.servlet.http.HttpServletRequest;
 
 public class SeedParamMethodArgumentResolver implements HandlerMethodArgumentResolver{
 
-	@Override
 	public boolean supportsParameter(MethodParameter parameter) {
 		if(parameter.hasParameterAnnotation(SeedParam.class)){
 			return true;
@@ -29,7 +28,6 @@ public class SeedParamMethodArgumentResolver implements HandlerMethodArgumentRes
 	/**
 	 * The arguments could be "page", "pagesize", "order" or the filters.
 	 */
-	@Override
 	public Object resolveArgument(MethodParameter parameter,
 			ModelAndViewContainer mavContainer, NativeWebRequest webRequest,
 			WebDataBinderFactory binderFactory) throws Exception {
@@ -52,8 +50,8 @@ public class SeedParamMethodArgumentResolver implements HandlerMethodArgumentRes
 		seed.setPageFilter(pageFilter);
 
 		int pageNumber = seed.getPageNumber();
-		int start = (pageNumber -1) * 2;
-		int end = pageNumber * 2;
+		int start = (pageNumber -1) * seed.getPageSize();
+		int end = pageNumber * seed.getPageSize();
 
 		seed.setStart(start);
 		seed.setEnd(end);

@@ -1,10 +1,9 @@
 package me.mingxing5212.chaihens.component;
 
-import me.mingxing5212.chaihens.domain.VoucherStatus;
-import me.mingxing5212.chaihens.domain.VoucherType;
+import me.mingxing5212.chaihens.domain.voucher.VoucherStatus;
+import me.mingxing5212.chaihens.domain.voucher.VoucherType;
 
 import java.util.List;
-import java.util.Optional;
 
 /**
  * 优惠券查询组件

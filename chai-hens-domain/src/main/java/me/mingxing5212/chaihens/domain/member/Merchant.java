@@ -1,17 +1,16 @@
-package me.mingxing5212.chaihens.domain;
+package me.mingxing5212.chaihens.domain.member;
 
-import java.io.Serializable;
+import me.mingxing5212.chaihens.domain.DomainEntity;
 
 /**
- * 实体店
+ * 接入平台商户
  *
  * @author Mingxing Li
- * @date 4/2/16
+ * @date 3/2/16
  */
-public class Store implements Serializable {
+public class Merchant extends DomainEntity {
     private Long id;
     private String name;
-    private String address;
 
     public Long getId() {
         return id;
@@ -27,13 +26,5 @@ public class Store implements Serializable {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
     }
 }
