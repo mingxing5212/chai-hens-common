@@ -13,7 +13,7 @@ import java.math.BigDecimal;
  * @date 3/2/16
  */
 public class Voucher extends DomainEntity {
-    private Long id;
+    private String id;
     private String name;
     private VoucherType type;
     private String code;
@@ -31,11 +31,11 @@ public class Voucher extends DomainEntity {
 
     public Voucher(){}
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
